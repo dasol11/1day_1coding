@@ -29,3 +29,7 @@ def solution(babbling):
         if len(b.strip()) == 0:
             c += 1
     return c
+
+
+
+∏
