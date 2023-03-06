@@ -26,10 +26,9 @@ def solution(babbling):
         for w in [ "aya", "ye", "woo", "ma" ]:
             if w * 2 not in b:
                 b = b.replace(w, ' ')
-        if len(b.strip()) == 0:
+        if len(b.strip()) == 0: # strip()은 모든 공백을 지워줌 즉, ""은 길이가 0이므로 ""을 만들면 c가 함
             c += 1
     return c
 
 
 
-∏
