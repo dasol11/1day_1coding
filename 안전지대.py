@@ -1,3 +1,12 @@
+"""
+
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120866
+
+    
+"""
+
+
 def solution(board):
     answer = 0
     bom = []
