@@ -1,3 +1,11 @@
+"""
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120923
+
+
+"""
+
+
 def solution(num, total):
     
     for i in range(-(total+num), (total+num) ):
