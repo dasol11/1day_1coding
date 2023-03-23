@@ -1,4 +1,4 @@
-
+# 한번에 해결
 def sol( N):
     count = 0
     
@@ -10,14 +10,9 @@ def sol( N):
                 if "3" in hms:
                     count +=1 
                         
-                    
-    
+        
     return count
 
 
 a = sol(5)
 print(a)
-
-b = "2334"
-if b in "3":
-    print (b)
