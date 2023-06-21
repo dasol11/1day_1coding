@@ -9,6 +9,7 @@ def solution(arr):
         return arr[s:e]
     else:
         return [-1]
+    
 a = solution([1, 2, 1, 4, 5, 2, 9])
 print(a)
 

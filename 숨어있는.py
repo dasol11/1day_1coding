@@ -7,7 +7,9 @@ def solution(my_string):
         else:
             if st :
                 stk += int(st)
-            st = ""      
+            st = ""  
+    if st:
+        stk += int(st)
     return stk
 
 
