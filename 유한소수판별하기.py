@@ -25,7 +25,7 @@ def solution(a, b):
     stk = factorization(b)
     while 2 in stk:
         stk.remove(2)
-        print(stk)
+        
     while 5 in stk:
         stk.remove(5)
 
