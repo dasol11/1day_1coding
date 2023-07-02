@@ -8,3 +8,6 @@ if total == s:
     print("Yes")
 else:
     print("No") 
+
+print(int(input())//4*"long "+"int")
+print("long "*int(input())//4+"int")
