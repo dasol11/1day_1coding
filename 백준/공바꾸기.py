@@ -6,5 +6,5 @@ for _ in range(m):
     a ,b = map(int, input().split())
     
     bak[a-1] , bak[b-1] =     bak[b-1] , bak[a-1]
-    print(bak)
+   
 print(" ".join(bak))

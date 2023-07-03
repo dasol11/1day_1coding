@@ -1,7 +1,7 @@
 a = 0
 b = 0
 
-for _ in range(30):
+for _ in range(20):
     s = input().split()
     
     if s[2] != "P":
