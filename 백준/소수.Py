@@ -8,5 +8,9 @@ for i in range(n,m+1):
             s +=1
     if s == 2:
         stk.append(i)
-print(sum(stk))
-print(min(stk))
+
+if stk:
+    print(sum(stk))
+    print(min(stk))
+else:
+    print(-1)

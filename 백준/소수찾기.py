@@ -11,5 +11,5 @@ for i in stk:
     if len(li) ==2 :
         num += 1
 print(num)
-        
+    
             
