@@ -10,7 +10,9 @@ s = a+b+c
 if s != 180:
     print("Error")
 else:
-    if a==b or a==c or b==c:
+    if a== 60 and b ==60 :
+        print("Equilateral")
+    elif a==b or a==c or b==c:
         print("Isosceles")
     else:
         print("Scalene") 
