@@ -22,3 +22,4 @@ for _ in range(t):
         c *= k
 
     print(a//(b*c))
+    

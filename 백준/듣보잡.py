@@ -12,5 +12,7 @@ for _ in range(m):
     if s in dic1:
         dic2[s] = 0
 
-stk = list(dic2.keys())
-print(stk)
+stk = sorted(list(dic2.keys()))
+print(len(stk))
+for i in stk:
+    print(i)

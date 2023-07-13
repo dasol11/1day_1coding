@@ -5,7 +5,6 @@ input = sys.stdin.readline
 t = int(input())
 
 stk = [int(input()) for _ in range(t)]
-print(stk)
 stk.sort()
 
 print(round(sum(stk)/t))
