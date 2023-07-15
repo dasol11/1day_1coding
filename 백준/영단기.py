@@ -12,7 +12,7 @@ for _ in range(n):
         else:
             dic[st] = 1
 
-a = sorted(dic.items() , key= lambda x:( -(x[1]),-(len(x[0])) ))
+a = sorted(dic.items() , key= lambda x:( -(x[1]),-(len(x[0])),x[0] ))
 for i in a:
     print(i[0])
     
