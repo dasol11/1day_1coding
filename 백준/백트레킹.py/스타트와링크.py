@@ -1,34 +1,18 @@
 import sys
-input = sys.stdin.readline
+from itertools import combinations
+n = int(sys.stdin.readline())
+graph = [ list(map(int, sys.stdin.readline().split())) for _ in range(n) ]
+members = list(range(n)) #1
+min_value = sys.maxsize #2
 
-
-n = int(input())
-graph = [list(map(int,input().split())) for _ in range(n)]
-
-visit =[False for _ in range(n)]
-min_val = sys.maxsize
-
-def backTracking(depth, idx):
-    global min_val
-    
-    if depth == n//2:
-        sum1, sum2 = 0, 0
-        for i in range(n):
-            for j in range(n):
-                if visit[i] and visit[j]:
-                    sum1 += graph[i][j]
-                elif not visit[i] and not visit[j]:
-                    sum2 += graph[i][j]
-        min_val = min(min_val,abs(sum1-sum2))
-        return           
-                    
-        
-    for i in range(idx,n):
-        if not visit[i]:
-            visit[i] = True
-            print(depth+1, i+1)
-            backTracking(depth+1, i+1)
-            visit[i] = False
-        
-    
-backTracking(0, 0)
+for r1 in combinations(members, n//2): #3
+    start, link = 0, 0
+    r2 = list(set(members) - set(r1)) #4
+    for r in combinations(r1, 2): #5
+        start += graph[r[0]][r[1]]
+        start += graph[r[1]][r[0]]
+    for r in combinations(r2, 2): #6
+        link += graph[r[0]][r[1]]
+        link += graph[r[1]][r[0]]
+    min_value = min(min_value, abs(start-link)) #7
+print(min_value)
