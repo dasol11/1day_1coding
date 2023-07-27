@@ -15,7 +15,7 @@ op_list = [operator[i] for i in range(4) for j in range(op_input[i])]
 
 q = deque(list(permutations(op_list, len(op_list))))
 result = []
-print(q.index(("+","+","//","-","*")))
+
 while q:
     now_list = q.popleft()
     now_sum = stk[0]
