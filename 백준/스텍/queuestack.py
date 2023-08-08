@@ -9,7 +9,7 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
 que = deque([val for idx, val in enumerate(B) if A[idx] == 0])
-print(que)
+
 M = int(input())
 
 C =  list(map(int, input().split()))
