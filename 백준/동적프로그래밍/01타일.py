@@ -10,6 +10,6 @@ stk[1] = 1
 stk[2] = 2
 
 for i in range(3,N+1):
-    stk[i] = stk[i-1] + stk[i-2]
+    stk[i] = (stk[i-1] + stk[i-2])%15746
     
-print(stk[N]%15746)
+print(stk[N])
