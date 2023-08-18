@@ -15,8 +15,7 @@ else:
     
     for i in range(2, N):
         dp[i] = max(dp[i-3] + arr[i-1],dp[i-2]) + arr[i]
-        print(dp)
-print(dp)
+
 print(dp[-1])
     
     
