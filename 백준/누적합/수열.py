@@ -10,6 +10,5 @@ dp[0] = sum(arr[:M])
 for i in range(1, N-M+1):
     dp[i] = dp[i-1]-arr[i-1]+arr[i+M-1]
 
-    print(dp)
 print(max(dp))
     
