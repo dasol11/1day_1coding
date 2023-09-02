@@ -6,19 +6,19 @@ N, M = map(int,input().split())
 
 arr = list(map(int,input().split()))
 
-s = 0
 dp = [0] * M
+s = 0
 
 for i in range(N):
     s += arr[i]
-    dp[s % M] += 1
+    dp[s%M] += 1
 
 answer = dp[0]
-print(dp)
+
 for i in dp:
-    answer += i * (i-1)//2
-    
-    print(answer)
+    answer += i*(i-1)//2
+print(answer)
+
 # 내 코드 시간초과
 
 # dp = [0] * (N+1)
