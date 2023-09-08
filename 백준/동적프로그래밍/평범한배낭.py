@@ -20,6 +20,6 @@ for i in range(1, N+1):
             dp[i][j] = dp[i-1][j]
         else:
             dp[i][j] = max(v +dp[i-1][j-w],dp[i-1][j])
-            print(i, j ,v +dp[i-1][j-w],dp[i-1][j])
-print(dp)            
+            
+           
 print(dp[N][K])
